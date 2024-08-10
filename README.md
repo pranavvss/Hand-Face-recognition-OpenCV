@@ -15,17 +15,25 @@ https://github.com/user-attachments/assets/82d5f17b-2629-4804-8324-944e2bd2160e
 ### About Project
 This project is a real-time face and hand detection system that leverages machine learning and computer vision techniques. The system captures video from a camera, identifies and tracks faces, and recognizes specific individuals based on pre-loaded images and data about them. The project integrates multiple technologies, including TensorFlow for GPU acceleration, MediaPipe for face landmarks detection, and Face Recognition for identifying known faces. The detected faces are annotated with their name and age, or an indication if the face is not found in the database. Additionally, facial landmarks are drawn on the detected faces.
 
+---------------------------------------------------------------------------
+
 ### Requirements
 Language: Python 3.10 (recommended version for compatibility with TensorFlow GPU)
 
+---------------------------------------------------------------------------
+
 ## Libraries
-- opencv-python: For video capture and display.
-- mediapipe: For facial landmarks detection.
-- face-recognition: For face detection and recognition.
+- [opencv-python](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html): For video capture and display.
+- [mediapipe](https://ai.google.dev/edge/mediapipe/solutions/guide): For facial landmarks detection.
+- [face-recognition](https://face-recognition.readthedocs.io/en/latest/readme.html): For face detection and recognition.
 - tensorflow-gpu: To leverage GPU for faster processing.
+
+---------------------------------------------------------------------------
 
 ## Applications:
 DroidCam: Used to capture video from a mobile device as a webcam.
+
+---------------------------------------------------------------------------
 
 ## Hardware: 
 A system with an NVIDIA GPU and CUDA support for TensorFlow GPU acceleration.
