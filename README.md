@@ -3,7 +3,7 @@ Hand/Face detection model using python (No hardware(Arduino, sensors required)
 
 Examples
 
-<img src="https://github.com/user-attachments/assets/82d5f17b-2629-4804-8324-944e2bd2160e" width="700" />
+https://github.com/user-attachments/assets/82d5f17b-2629-4804-8324-944e2bd2160e
 
 <img src="https://github.com/user-attachments/assets/8c08e022-5727-4235-bc8d-736fcf866190" width="700" />
 <img src="https://github.com/user-attachments/assets/5f59afd1-bc09-4fbf-bbc7-c56b7885263c" width="700" />
