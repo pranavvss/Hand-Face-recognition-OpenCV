@@ -1,5 +1,5 @@
 # Hand-Face-detection-model-using-python
-Hand/Face detection model using python (No hardware - Arduino, sensors not required)
+Hand/Face detection model using python (No hardware - Arduino, sensors not required) - NOT FOR BEGINNERS.
 
 Examples
 
@@ -26,7 +26,7 @@ Language: Python 3.10 (recommended version for compatibility with TensorFlow GPU
 - [opencv-python](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html): For video capture and display.
 - [mediapipe](https://ai.google.dev/edge/mediapipe/solutions/guide): For facial landmarks detection.
 - [face-recognition](https://face-recognition.readthedocs.io/en/latest/readme.html): For face detection and recognition.
-- tensorflow-gpu: To leverage GPU for faster processing.
+- [tensorflow-gpu](https://www.tensorflow.org/guide/gpu): To leverage GPU for faster processing.
 
 ---------------------------------------------------------------------------
 
