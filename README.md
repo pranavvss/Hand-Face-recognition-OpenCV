@@ -199,10 +199,15 @@ cv2.destroyAllWindows()
 ```
 Explanation: Once the loop exits, the video capture is released, and all OpenCV windows are closed to free up resources.
 
+---------------------------------------------------------------------------
 
-
-----------------------We Are Done------------------------------------------
 
 - In these 10 simple steps we are create an Face recognition and also learn about movement detectors, without even buying any hardware like arduino. Hardware like arduino, Sensors etc can help us make advance models but these are Expensive, So if you still want to make this type of projects there are libraies available.
 
-----------------------Thankyou, Please consider Following me on Github.----
+[!NOTE}
+If you are intrested in these type of projects do check out my other computer vision and python projects
+- [Multi Stream Vision-Real Time Object Detection, 2023](https://github.com/pranavvss/Multi-Stream-Vision-Real-Time-Object-Detection-)- Under this project I have include object detection and used a pre trained data for more accuracy to test my code, This project already contains all the features that were mention above in Hand-Face-Detection-Model.
+- [Gestura: Multi Control Interface, 2023](https://github.com/pranavvss/Gestura-Multi-Control-Interface)- Under this project I have implemented the concept of how we do certain task on our computer using Gestures and Webcam, which our python program detects and implement on the computer in real time.
+
+- ThankYou.
+
