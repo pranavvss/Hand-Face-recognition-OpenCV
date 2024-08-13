@@ -2,10 +2,14 @@
 
 >[!NOTE]
 >Hand/Face detection model using python (No hardware - Arduino, sensors not required) - For Intermediate Python Programmers.
+>
+---------------------------------------------------------------------------
 
-*ABOUT THIS PROJECT-
+**ABOUT THIS PROJECT-
 
 This project is a real-time face and hand detection system that leverages machine learning and computer vision techniques. The system captures video from a camera, identifies and tracks faces, and recognizes specific individuals based on pre-loaded images and data about them. The project integrates multiple technologies, including TensorFlow for GPU acceleration, MediaPipe for face landmarks detection, and Face Recognition for identifying known faces. The detected faces are annotated with their name and age, or an indication if the face is not found in the database. Additionally, facial landmarks are drawn on the detected faces.
+
+---------------------------------------------------------------------------
 
 Examples
 
@@ -18,34 +22,23 @@ https://github.com/user-attachments/assets/59ba1655-adee-4ad8-86f6-70ac39931561
 <img src="https://github.com/user-attachments/assets/e641f144-3909-46e1-9758-f8e97d7ffdac"/>
 
 ---------------------------------------------------------------------------
-### About Project
-This project is a real-time face and hand detection system that leverages machine learning and computer vision techniques. The system captures video from a camera, identifies and tracks faces, and recognizes specific individuals based on pre-loaded images and data about them. The project integrates multiple technologies, including TensorFlow for GPU acceleration, MediaPipe for face landmarks detection, and Face Recognition for identifying known faces. The detected faces are annotated with their name and age, or an indication if the face is not found in the database. Additionally, facial landmarks are drawn on the detected faces.
 
----------------------------------------------------------------------------
+**REQUIRNMENTS-
 
-### Requirements
-Language: Python 3.10 (recommended version for compatibility with TensorFlow GPU)
+Language, Libraries, Software and Hardware: 
 
----------------------------------------------------------------------------
-
-## Libraries
+- Python 3.10 (recommended version for compatibility with TensorFlow GPU)
 - [opencv-python](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html): For video capture and display.
 - [mediapipe](https://ai.google.dev/edge/mediapipe/solutions/guide): For facial landmarks detection.
 - [face-recognition](https://face-recognition.readthedocs.io/en/latest/readme.html): For face detection and recognition.
 - [tensorflow-gpu](https://www.tensorflow.org/guide/gpu): To leverage GPU for faster processing.
+- DroidCam: Used to capture video from a mobile device as a webcam.
+- A system with an NVIDIA GPU and CUDA support for TensorFlow GPU acceleration.
 
 ---------------------------------------------------------------------------
 
-## Applications:
-DroidCam: Used to capture video from a mobile device as a webcam.
+**STEP BY STEP GUIDE BELOW
 
----------------------------------------------------------------------------
-
-## Hardware: 
-A system with an NVIDIA GPU and CUDA support for TensorFlow GPU acceleration.
----------------------------------------------------------------------------
-
-#Step by Step Guide below
 ---------------------------------------------------------------------------
 
 1. Importing Libraries and Checking GPU Availability
