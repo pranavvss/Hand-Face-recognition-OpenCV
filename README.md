@@ -43,7 +43,8 @@ Language, Libraries, Software and Hardware:
 ---------------------------------------------------------------------------
 
 1. Importing Libraries and Checking GPU Availability
-```
+   
+```python
 import cv2
 import mediapipe as mp
 import face_recognition
@@ -53,22 +54,26 @@ import tensorflow as tf
 print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('GPU')))
 
 ```
+
 Explanation- We start by importing libraries (Make sure you have installed python), we use a command (pip install .library name. for any kind of python library we need to install.) We have imported cv2 which is used for capturing the video, mediapipe is use to make the facial landmark, Face_recognition is used to match the face in the webcam, with a data of face images that we'll add in this project, if any of the picture matches with the face on webcam it shows certain data that we added for that face. At last we import tensorflow which make all these process smoother by making our GPU do all these stuff (You must have a Nvdia Compatible GPU).
 
 ---------------------------------------------------------------------------
 
 2. Initializing MediaPipe for Face Landmarks Detection
-```
+   
+```python
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(max_num_faces=2, min_detection_confidence=0.8, min_tracking_confidence=0.8)
 mp_drawing = mp.solutions.drawing_utils
 ```
+
 Explanation- mp_face_mesh will initializes the MediaPipe Face Mesh solution for detecting facial landmarks. face_mesh will creates a FaceMesh object that can detect up to 2 faces in the frame with specified confidence levels for detection and tracking and mp_drawing is a utility for drawing the detected facial landmarks on the frames.
 
 ---------------------------------------------------------------------------
 
 3. Loading Known Face Encodings
-```
+   
+```python
 known_face_encodings = []
 known_face_names = []
 
@@ -85,10 +90,11 @@ try:
 except Exception as e:
     print(f"Error loading image Pranav.jpg: {e}")
 ```
+
 You can use this same command for as many pictures you want just make sure the folders are in the right places where it should be 
 ![image](https://github.com/user-attachments/assets/bd61f5e8-7244-4d85-ae9b-e436270cb45f)
 
-Somewhat like this
+like this
 - Make a main directory or folder
 - under which make aother folder named "faces"
 - Inside that put as many pictures you want, make sure to rename them as Person1.jpg Person2.jpg for ease.
@@ -100,7 +106,8 @@ Explanation- known_face_encodings and known_face_names lists are initialized to 
 4. Capturing Video from [DroidCam](https://www.dev47apps.com/)
 
 Droid Cam is a free software (You dont need a webcam) download droid cam in your phone as well as your pc/laptop connect them with either usb or wifi. Once done Modify the old code by adding these new lines 
-```
+
+```python
 cap = cv2.VideoCapture(0)
 
 # Set resolution to 640x480 (adjust as necessary for speed and quality)
@@ -117,14 +124,14 @@ Explanation: cap = cv2.VideoCapture(0) is used for Capturing video from the firs
 
 5. Setting Up the Display Window
 
-```
+```python
 cv2.namedWindow('Face and Hand Detection', cv2.WINDOW_NORMAL)
 ```
 ---------------------------------------------------------------------------
 
 6. Processing Each Frame
 
-```
+```python
 while True:
     ret, frame = cap.read()
     if not ret:
@@ -134,12 +141,14 @@ while True:
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
 ```
+
 Explanation: Our script enters an infinite loop to continuously capture and process each video frame. If the frame is captured successfully, it is converted from BGR (OpenCV's default color format) to RGB (required for face recognition). [Read Documentation on BGR TO RGB OpenCV'S if you are not aware of this process](https://www.geeksforgeeks.org/convert-bgr-and-rgb-with-python-opencv/)
 
 ---------------------------------------------------------------------------
 
 7. Face Recognition
-```
+   
+```python
 face_locations = face_recognition.face_locations(frame_rgb)
 face_encodings = face_recognition.face_encodings(frame_rgb, face_locations)
 
@@ -164,7 +173,8 @@ Explanation: The face_recognition library is used to detect face locations and e
 ---------------------------------------------------------------------------
 
 8. Facial Landmarks Detection
-```
+   
+```python
 results = face_mesh.process(frame_rgb)
 if results.multi_face_landmarks:
     for face_landmarks in results.multi_face_landmarks:
@@ -174,12 +184,14 @@ if results.multi_face_landmarks:
             mp_drawing.DrawingSpec(color=(0, 0, 255), thickness=1, circle_radius=1)
         )
 ```
+
 Explanation: The script processes the frame with face_mesh to detect facial landmarks. If landmarks are detected, they are drawn on the face using the mp_drawing utility, with green lines and red dots representing the landmarks.
 
 ---------------------------------------------------------------------------
 
 9. Displaying the Results
-```
+    
+```python
 if not face_locations:
     cv2.putText(frame, "No Face Detected", (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 0, 255), 3)
 
@@ -188,15 +200,18 @@ cv2.imshow('Face and Hand Detection', frame)
 if cv2.waitKey(10) & 0xFF == ord('q'):
     break
 ```
+
 Explanation: If no faces are detected in the frame, the message "No Face Detected" is displayed. The processed frame is displayed in the window. The loop continues until the user presses the 'q' or Ctrl+ C in the terminal key.
 
 ---------------------------------------------------------------------------
 
 10. Releasing Resources
-```
+    
+```python
 cap.release()
 cv2.destroyAllWindows()
 ```
+
 Explanation: Once the loop exits, the video capture is released, and all OpenCV windows are closed to free up resources.
 
 ---------------------------------------------------------------------------
