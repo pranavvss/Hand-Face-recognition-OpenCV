@@ -92,7 +92,10 @@ except Exception as e:
 ```
 
 You can use this same command for as many pictures you want just make sure the folders are in the right places where it should be 
+
+
 ![image](https://github.com/user-attachments/assets/bd61f5e8-7244-4d85-ae9b-e436270cb45f)
+
 
 like this
 - Make a main directory or folder
