@@ -1,4 +1,4 @@
-# Hand & Face detection model: Usingpython
+# Hand & Face detection model: Using Python
 
 >[!NOTE]
 >Hand/Face detection model using python (No hardware - Arduino, sensors not required) - For Intermediate Python Programmers.
