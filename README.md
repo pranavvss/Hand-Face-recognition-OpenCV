@@ -1,11 +1,11 @@
-# Hand-Face-detection-model-using-python
+# Hand & Face detection model: Usingpython
 
 >[!NOTE]
 >Hand/Face detection model using python (No hardware - Arduino, sensors not required) - For Intermediate Python Programmers.
->
+
 ---------------------------------------------------------------------------
 
-**ABOUT THIS PROJECT-
+**ABOUT THIS PROJECT-**
 
 This project is a real-time face and hand detection system that leverages machine learning and computer vision techniques. The system captures video from a camera, identifies and tracks faces, and recognizes specific individuals based on pre-loaded images and data about them. The project integrates multiple technologies, including TensorFlow for GPU acceleration, MediaPipe for face landmarks detection, and Face Recognition for identifying known faces. The detected faces are annotated with their name and age, or an indication if the face is not found in the database. Additionally, facial landmarks are drawn on the detected faces.
 
@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/59ba1655-adee-4ad8-86f6-70ac39931561
 
 ---------------------------------------------------------------------------
 
-**REQUIRNMENTS-
+**REQUIRNMENTS-**
 
 Language, Libraries, Software and Hardware: 
 
@@ -37,7 +37,7 @@ Language, Libraries, Software and Hardware:
 
 ---------------------------------------------------------------------------
 
-**STEP BY STEP GUIDE BELOW
+**STEP BY STEP GUIDE BELOW**
 
 ---------------------------------------------------------------------------
 
