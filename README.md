@@ -16,10 +16,11 @@ This project is a real-time face and hand detection system that leverages machin
 https://github.com/user-attachments/assets/59ba1655-adee-4ad8-86f6-70ac39931561
 
 
-<img src="https://github.com/user-attachments/assets/5afbe5af-b6ed-4b55-8b91-1cd164ddf484"/>
+![image](https://github.com/user-attachments/assets/826a7797-06ef-43da-bf1d-c89fd0325ab8)
 
 
-<img src="https://github.com/user-attachments/assets/e641f144-3909-46e1-9758-f8e97d7ffdac"/>
+![image](https://github.com/user-attachments/assets/4a7406f8-8792-46ed-937f-e2f20f4b1ff9)
+
 
 ---------------------------------------------------------------------------
 
