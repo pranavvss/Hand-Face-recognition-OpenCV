@@ -11,7 +11,7 @@ This project is a real-time face and hand detection system that leverages machin
 
 ---------------------------------------------------------------------------
 
-Examples
+**EXAMPLES OF THE OUTCOME-**
 
 https://github.com/user-attachments/assets/59ba1655-adee-4ad8-86f6-70ac39931561
 
